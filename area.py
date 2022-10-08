@@ -1,11 +1,10 @@
-a = float(input())
-b = float(input())
-c = float(input())
-triangleArea = (a * c) / 2
-circleArea = 3.14159 * c ** 2
-trapezeArea = ((a + b) * c) / 2
-squareArea = b ** 2
-rectangleArea = a * b
+value = input().split()
+a, b, c = value
+triangleArea = (float(a) * float(c)) / 2
+circleArea = 3.14159 * float(c) ** 2
+trapezeArea = ((float(a) + float(b)) * float(c)) / 2
+squareArea = float(b) ** 2
+rectangleArea = float(a) * float(b)
 print('TRIANGULO: %.3f' %triangleArea)
 print('CIRCULO: %.3f' %circleArea)
 print('TRAPEZIO: %.3f' %trapezeArea)
