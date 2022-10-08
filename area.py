@@ -8,3 +8,6 @@ squareArea = b ** 2
 rectangleArea = a * b
 print('TRIANGULO: %.3f' %triangleArea)
 print('CIRCULO: %.3f' %circleArea)
+print('TRAPEZIO: %.3f' %trapezeArea)
+print('QUADRADO: %.3f' %squareArea)
+print('RETANGULO: %.3f' %rectangleArea)
