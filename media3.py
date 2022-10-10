@@ -1,12 +1,11 @@
 a = float(input())
 b = float(input())
 media = (a + b) / 2
-if a == 0:
-    print('reprovado')
-elif media >= 6:
-    print('aprovado')
-elif media <= 0.995:
-    print('reprovado')
+if media >= 6:
+        print('aprovado')
+elif (a + 10) / 2 >= 6:
+        print('talvez com a sub')
+
 else:
-    print('talvez com a sub')
+        print('reprovado')
 
