@@ -1,38 +1,38 @@
-listaDeDias = ['domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado']
+daysList = ['segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado', 'domingo']
 
-def verificaDiaEntrada(entrada, lista):
-    
-    if entrada in lista:
+def checkLogin(login, days):
+
+    if login in days:
         return True
     else:
         return False
 
-def verificaQuantDeDias(dias):
-    
-    if dias > 6 or dias < 0:
+def checkDays(days):
+
+    if days > 6 or days < 0:
         return False
     else:
-        return True 
+        return True
 
-diaDaSemana = False
+weekDay = False
 
-while(not diaDaSemana):
-    diaEntrada = input('Digite o dia da semana: ')
-    diaDaSemana = verificaDiaEntrada(diaEntrada, listaDeDias)
-    
-prazoDeEspera = False
+while(not weekDay):
+    dayLogin = input('Digite o dia da semana: ')
+    weekDay = checkLogin(dayLogin, daysList)
 
-while(not prazoDeEspera):
-    quantDias = int(input('Quantidade de dias da entrega: '))
-    prazoDeEspera = verificaQuantDeDias(quantDias)
-    
+waitTime = False
 
-if quantDias == 0:
+while(not waitTime):
+    daysAmount = int(input('Quantidade de dias da entrega: '))
+    waitTime = dayLogin(daysAmount)
+
+
+if daysAmount == 0:
     print('Seu Pedido CHega Hoje!')
 else:
-    indexDoDiaSemana = listaDeDias.index(diaEntrada)
-    novaLista = listaDeDias[indexDoDiaSemana + 1:len(listaDeDias)] + listaDeDias[0:indexDoDiaSemana]
+    indexOfDay = daysList.index(dayLogin)
+    newList = daysList[indexOfDay + 1:len(daysList)] + daysList[0:indexOfDay]
 
-    diaEntrega = novaLista[quantDias - 1]
+    delivery = newList[daysAmount - 1]
 
-    print('Será entregue dia ', diaEntrega)
+    print('Será entregue dia ', delivery)
