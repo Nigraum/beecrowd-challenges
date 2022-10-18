@@ -5,10 +5,10 @@ media = ((float(n1) * 2) + (float(n2) * 3) + (float(n3) * 4) + (float(n4) * 1)) 
 
 if media >= 7:
     print('Media: %.1f' %media)
-    print('Aluno aprovado')
+    print('Aluno aprovado.')
 if media <= 5:
     print('Media: %.1f' %media)
-    print('Aluno rerovado')
+    print('Aluno rerovado.')
 if media >= 5.0 and media <= 6.9:
     n5 = float(input())
     print('Media: %.1f' %media)
