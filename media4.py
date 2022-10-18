@@ -8,7 +8,7 @@ if media >= 7:
     print('Aluno aprovado.')
 if media <= 5:
     print('Media: %.1f' %media)
-    print('Aluno rerovado.')
+    print('Aluno reprovado.')
 if media >= 5.0 and media <= 6.9:
     n5 = float(input())
     print('Media: %.1f' %media)
