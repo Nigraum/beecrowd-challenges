@@ -7,7 +7,7 @@ if media >= 7:
     print('Aluno aprovado')
 if media <= 5:
     print('Aluno reprovado')
-if 5.0 <= media <= 6.0:
+if 5.0 <= media <= 6.9:
     print('Aluno em exame.')
     n5 = float(input())
     print('Nota do exame: %.1f' %n5)
