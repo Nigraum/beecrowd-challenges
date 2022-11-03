@@ -1,14 +1,15 @@
-a = int(input())
+first_case = int(input())
 
-for i in range(0, a):
-    number = int(input())
-    b = 0
-    c = 1
-    while c <= number:
-        if number % c == 0:
-            b = b + 1
-        c = c + 1
-    if b > 2:
-        print(f'{number} nao eh primo')
+for case in range(first_case):
+    n = int(input())
+
+    isPrime = True
+    for i in range(2, n):
+        if n % i == 0:
+            isPrime = False
+            break
+    if isPrime:
+        print(f'{n} eh primo')
     else:
-        print(f'{number} eh primo')
+        print(f'{n} nao eh primo')
+
