@@ -12,10 +12,16 @@ def remover(shop_list, cod_produto):
 
 
 def exibir(shop_list):
-    print(*shop_list, sep=' ')
+
+    copy_list = shop_list
+    for i in range(len(copy_list)):
+        copy_list[i] = int(copy_list[i])
+    copy_list.sort()
+    print(*copy_list, sep=' ')
 
 
-shop_list = list(input())
+shop_list = input()
+shop_list = shop_list.split()
 
 for element in shop_list:
     if element == ' ':
@@ -27,7 +33,7 @@ while not 'encerrar' in user_input:
     user_input = input().split(' ')
     operacao = user_input[0]  # operacao do usuario
     try:
-        cod_produto = user_input[1]  # codigo do produto
+        cod_produto = int(user_input[1])  # codigo do produto
     except:
         pass
 
@@ -37,3 +43,5 @@ while not 'encerrar' in user_input:
         remover(shop_list, cod_produto)
     elif operacao == 'exibir':
         exibir(shop_list)
+
+exibir(shop_list)
