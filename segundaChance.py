@@ -32,5 +32,5 @@ for aluno in alunos:
     else:
         print('- ', end='')
     print(
-        f'({i:03d}) original: {aluno["nota_original"]} | final: {aluno["nota_final"]}')
+        f'({i:03d}) original: {aluno["nota_original"]:0>5.2f} | final: {aluno["nota_final"]:0>5.2f}')
     i += 1
