@@ -28,9 +28,9 @@ print(f'NOTAS ALTERADAS: {notas_alteradas}')
 i = 1
 for aluno in alunos:
     if aluno['nota_final'] != aluno['nota_original']:
-        print('* ', end='')
+        print('*', end='')
     else:
-        print('- ', end='')
+        print('-', end='')
     print(
         f'({i:03d}) original: {aluno["nota_original"]:0>5.2f} | final: {aluno["nota_final"]:0>5.2f}')
     i += 1
