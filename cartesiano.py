@@ -13,5 +13,11 @@ if float(x) > 0 and float(y) < 0:
 if float(x) > 0 and float(y) > 0:
     print('Q1')
 
-if float(x) == 0.0 and float(y) == 0.0:
-    print('Origem')
+if float(x) == 0:
+    if float(y) == 0:
+        print('Origem')
+    if float(y) != 0:
+        print('Eixo Y')
+if float(y) == 0:
+    if float(x) != 0:
+        print('Eixo X')
