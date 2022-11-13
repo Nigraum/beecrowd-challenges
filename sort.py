@@ -1,7 +1,10 @@
-x = input().split()
-a, b, c = x
-a = int(a)
-b = int(b)
-c = int(c)
-
-print(x.sort)
+x, y,z = list(map(int, input().split()))
+nums = [x, y, z]
+nums.sort()
+print(nums[0])
+print(nums[1])
+print(nums[2])
+print("")
+print(x)
+print(y)
+print(z)
